@@ -1,0 +1,85 @@
+#:kivy 1.7.2
+
+<FlipperGame>:
+
+   
+    Label:
+        font_size: 50
+        pos:( 50, 625)
+        text: "Score: "
+        color: 255,255,0,1
+
+    Label:
+        font_size: 50
+        pos: 50, 525
+        text: str(root.screenScore)
+        color: 255,255,0,1
+	
+
+    Label:
+        font_size: 50
+        pos:( 800, 625)
+        text: "Lives: "
+        color: 255,255,0,1
+        
+	
+	
+    Label:
+	
+        font_size: 50
+        pos:( 800, 525)
+        text: str(root.screenLives)
+        color: 255,255,0,1
+
+    Label:
+        font_size: 50
+        pos:( 95, 220)
+        text: "Highscore: "
+        color: 255,255,0,1
+    Label:
+        font_size: 35
+        pos:( 10, 170)
+        text:"1:"
+        color: 255,255,0,1
+
+    Label:
+        font_size: 35
+        pos:( 10,120)
+        text: "2:"
+        color: 255,255,0,1
+
+    Label:
+        font_size: 35
+        pos:( 10,70)
+        text: "3:"
+        color: 255,255,0,1
+
+    Label:
+        font_size: 35
+        pos:( 100, 150)
+        text:str(root.plaats1)
+        color: 255,255,0,1
+
+    Label:
+        font_size: 35
+        pos:( 100,100)
+        text:str(root.plaats2)
+        color: 255,255,0,1
+
+    Label:
+        font_size: 35
+        pos:( 100,70)
+        text:str(root.plaats3)
+        color: 255,255,0,1
+
+<-FullImage>:
+    canvas:
+        Color:
+            rgb: (1,1,1)
+        Rectangle:
+            texture: self.texture
+            size: 1024,268
+            pos:100,725
+   
+            
+    
